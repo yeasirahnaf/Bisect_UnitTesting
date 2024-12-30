@@ -96,3 +96,7 @@ function power(a, b) {
 function absoluteValue(a) {
   return Math.abs(a);
 }
+
+function modulus(a, b) {
+  return a % b;
+}
