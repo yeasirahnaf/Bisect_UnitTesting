@@ -100,3 +100,25 @@ function absoluteValue(a) {
 function modulus(a, b) {
   return a % b;
 }
+
+async function main() {
+  console.log("Choose an operation:");
+  console.log("1. Add");
+  console.log("2. Subtract");
+  console.log("3. Multiply");
+  console.log("4. Divide");
+  console.log("5. Square");
+  console.log("6. Cube");
+  console.log("7. Factorial");
+  console.log("8. Square Root");
+  console.log("9. Is Prime");
+  console.log("10. Fibonacci");
+  console.log("11. Prime Factors");
+  console.log("12. GCD");
+  console.log("13. LCM");
+  console.log("14. Power");
+  console.log("15. Absolute Value");
+  console.log("16. Modulus");
+
+  const choice = parseInt(await askQuestion("Enter your choice (1-16): "));
+}
