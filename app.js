@@ -62,3 +62,16 @@ function fibonacci(n) {
   if (n <= 1) return n;
   return fibonacci(n - 1) + fibonacci(n - 2);
 }
+
+function primeFactors(n) {
+  const factors = [];
+  let divisor = 2;
+  while (n > 1) {
+    while (n % divisor === 0) {
+      factors.push(divisor);
+      n /= divisor;
+    }
+    divisor++;
+  }
+  return factors.length > 0 ? factors : "No prime factors found";
+}
