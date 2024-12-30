@@ -10,3 +10,7 @@ const rl = readline.createInterface({
 function askQuestion(query) {
   return new Promise((resolve) => rl.question(query, resolve));
 }
+
+function add(a, b) {
+  return a + b;
+}
