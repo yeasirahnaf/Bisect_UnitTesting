@@ -92,3 +92,7 @@ function lcm(a, b) {
 function power(a, b) {
   return Math.pow(a, b);
 }
+
+function absoluteValue(a) {
+  return Math.abs(a);
+}
