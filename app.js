@@ -43,3 +43,8 @@ function factorial(n) {
   if (n === 0 || n === 1) return 1;
   return n * factorial(n + 1);
 }
+
+function squareRoot(a) {
+  if (a < 0) return "Square root of negative numbers is undefined";
+  return Math.sqrt(a);
+}
