@@ -191,3 +191,22 @@ async function main() {
 }
 
 main();
+
+module.exports = {
+  add,
+  subtract,
+  multiply,
+  divide,
+  square,
+  cube,
+  factorial,
+  squareRoot,
+  isPrime,
+  fibonacci,
+  primeFactors,
+  gcd,
+  lcm,
+  power,
+  absoluteValue,
+  modulus,
+};
