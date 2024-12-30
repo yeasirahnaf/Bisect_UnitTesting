@@ -121,4 +121,73 @@ async function main() {
   console.log("16. Modulus");
 
   const choice = parseInt(await askQuestion("Enter your choice (1-16): "));
+  if (choice >= 1 && choice <= 16) {
+    const num1 = parseFloat(await askQuestion("Enter the first number: "));
+    let num2;
+    if (![5, 6, 7, 8, 9, 10, 11, 15].includes(choice)) {
+      num2 = parseFloat(await askQuestion("Enter the second number: "));
+    }
+
+    let result;
+    switch (choice) {
+      case 1:
+        result = add(num1, num2);
+        break;
+      case 2:
+        result = subtract(num1, num2);
+        break;
+      case 3:
+        result = multiply(num1, num2);
+        break;
+      case 4:
+        result = divide(num1, num2);
+        break;
+      case 5:
+        result = square(num1);
+        break;
+      case 6:
+        result = cube(num1);
+        break;
+      case 7:
+        result = factorial(num1);
+        break;
+      case 8:
+        result = squareRoot(num1);
+        break;
+      case 9:
+        result = isPrime(num1);
+        break;
+      case 10:
+        result = fibonacci(num1);
+        break;
+      case 11:
+        result = primeFactors(num1);
+        break;
+      case 12:
+        result = gcd(num1, num2);
+        break;
+      case 13:
+        result = lcm(num1, num2);
+        break;
+      case 14:
+        result = power(num1, num2);
+        break;
+      case 15:
+        result = absoluteValue(num1);
+        break;
+      case 16:
+        result = modulus(num1, num2);
+        break;
+      default:
+        result = "Invalid choice";
+    }
+
+    console.log("Result:", result);
+  } else {
+    console.log("Invalid choice. Please restart the program and select a valid option.");
+  }
+
+  rl.close();
 }
+
+main();
