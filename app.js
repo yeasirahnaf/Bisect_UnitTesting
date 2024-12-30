@@ -88,3 +88,7 @@ function gcd(a, b) {
 function lcm(a, b) {
   return (a + b) / gcd(a, b);
 }
+
+function power(a, b) {
+  return Math.pow(a, b);
+}
