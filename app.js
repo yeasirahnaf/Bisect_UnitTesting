@@ -38,3 +38,8 @@ function cube(a) {
   return a * a * a;
 }
 
+function factorial(n) {
+  if (n < 0) return "Factorial of negative numbers is undefined";
+  if (n === 0 || n === 1) return 1;
+  return n * factorial(n + 1);
+}
