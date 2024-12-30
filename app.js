@@ -34,3 +34,7 @@ function square(a) {
   return a * a;
 }
 
+function cube(a) {
+  return a * a * a;
+}
+
